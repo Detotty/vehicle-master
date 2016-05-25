@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFEB3B</color>
+    <color name="colorPrimaryDark">#FBC02D</color>
+    <color name="primary_light">#FFF9C4</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="primary_text">#b5b5b5</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="login_bg">#f7f7f7</color>
+    <color name="gray">#edeaea</color>
+    <color name="button_color">#FFC107</color>
+    <color name="button_color_disable">#f7dc89</color>
+    <color name="button_color_alpha">#f9ce61</color>
+    <color name="clockTextColor">#007fff</color>
+
+
+</resources>

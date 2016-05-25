@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="pk.roadpartner.ui.DashBoradActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_margin="@dimen/WidgetsMagginLarge"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <pk.roadpartner.view.DigitalClock
+            android:id="@+id/timeCounterDigitalClock"
+            style="@style/ClockButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/WidgetsMagginLarge"
+            android:gravity="center"
+            android:paddingBottom="@dimen/WidgetsPaddingLargeExtraExtra"
+            android:paddingTop="@dimen/WidgetsPaddingLargeExtraExtra"
+            android:text="00:00:00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="50sp" />
+        <LinearLayout
+            android:id="@+id/bidProcessingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pleaseYourBidisProcessing"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Processing"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <pl.tajchert.sample.DotsTextView
+                    android:id="@+id/dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sssssss"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black"
+                    android:textSize="50sp"
+                    dots:autoplay="true"
+                    dots:period="1000" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/bidWindLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_win" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView4"
+                android:gravity="left|center"
+                android:text="@string/win_hint"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/winButton"
+                style="@style/buttonGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView4"
+                android:layout_marginTop="@dimen/WidgetsMagginLarge"
+                android:drawableLeft="@drawable/ic_lets_go"
+                android:drawablePadding="@dimen/drawablePaddingLarge"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/WidgetsPaddingLarge"
+                android:text="@string/confirmOffer"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/bidLossdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_loss" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView5"
+                android:gravity="left|center"
+                android:text="@string/loss_hint"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <Button
+                android:id="@+id/lossButton"
+                style="@style/buttonGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView5"
+                android:layout_marginTop="@dimen/WidgetsMagginLarge"
+                android:drawableLeft="@drawable/ic_lets_go"
+                android:drawablePadding="@dimen/drawablePaddingLarge"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/WidgetsPaddingLarge"
+                android:text="@string/tryAgain"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="pk.roadpartner.ui.DashBoradActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view"
+            android:layout_margin="@dimen/WidgetsMagginLarge">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                android:paddingRight="@dimen/WidgetsPaddingLarge"
+                android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/linearLayout1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_order_no" />
+
+                <ImageView
+                    android:id="@+id/j_way"
+                    android:layout_width="80dp"
+                    android:padding="@dimen/WidgetsPaddingSmall"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/twoway" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/WidgetsPaddingSmall"
+                        android:text="@string/orderNo"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/orderNoTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/WidgetsPaddingSmall"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout0"
+                android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                android:paddingRight="@dimen/WidgetsPaddingLarge"
+                android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/linearLayout3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_driver" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/WidgetsPaddingSmall"
+                        android:text="@string/pickupAddress"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/pickUpTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/WidgetsPaddingSmall"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout"
+                android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                android:paddingRight="@dimen/WidgetsPaddingLarge"
+                android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/linearLayout4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_destination" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                    android:layout_toLeftOf="@+id/bidButton"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/WidgetsPaddingSmall"
+                        android:text="@string/dropAddress"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/dropTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/WidgetsPaddingSmall"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout2"
+                android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                android:paddingRight="@dimen/WidgetsPaddingLarge"
+                android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                <ImageView
+                    android:id="@+id/imageViewDis"
+                    android:layout_width="wrap_content"
+                    android:padding="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/linearLayoutd"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/distance" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                    android:layout_toLeftOf="@+id/bidButton"
+                    android:layout_toRightOf="@+id/imageViewDis"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/WidgetsPaddingSmall"
+                        android:text="@string/distance"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/KM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/WidgetsPaddingSmall"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout15"
+                android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                android:paddingRight="@dimen/WidgetsPaddingLarge"
+                android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/linearLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_my_number" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                    android:layout_toLeftOf="@+id/bidButton"
+                    android:layout_toRightOf="@+id/imageView10"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/WidgetsPaddingSmall"
+                        android:text="@string/mobileNumber"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/mobileNumberTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/WidgetsPaddingSmall"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout4"
+                android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                android:paddingRight="@dimen/WidgetsPaddingLarge"
+                android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/linearLayout5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_person" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                    android:layout_toLeftOf="@+id/bidButton"
+                    android:layout_toRightOf="@+id/imageView13"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/WidgetsPaddingSmall"
+                        android:text="@string/name"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/WidgetsPaddingSmall"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout5"
+                android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                android:paddingRight="@dimen/WidgetsPaddingLarge"
+                android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/linearLayout6"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_cash" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                    android:layout_toLeftOf="@+id/bidButton"
+                    android:layout_toRightOf="@+id/imageView14"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/WidgetsPaddingSmall"
+                        android:text="@string/cashFromCustomer"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/cashFroamCustomerTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/WidgetsPaddingSmall"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout6"
+                android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                android:paddingRight="@dimen/WidgetsPaddingLarge"
+                android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/linearLayout7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_my_bid" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                    android:layout_toLeftOf="@+id/bidButton"
+                    android:layout_toRightOf="@+id/imageView15"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/WidgetsPaddingSmall"
+                        android:text="@string/yourBid"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/yourBidTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/WidgetsPaddingSmall"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout7"
+                android:layout_margin="@dimen/WidgetsMagginLarge"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/bidProcessingLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pleaseYourBidisProcessing"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Processing"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <pl.tajchert.sample.DotsTextView
+                            android:id="@+id/dots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sssssss"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/black"
+                            android:textSize="50sp"
+                            dots:autoplay="true"
+                            dots:period="1000" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hintTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bidConfirmedSucessful"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/confrimButton"
+                    style="@style/buttonGreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/cnicEditText"
+                    android:layout_margin="@dimen/WidgetsMagginLarge"
+                    android:drawableLeft="@drawable/ic_lets_go"
+                    android:drawablePadding="@dimen/drawablePaddingLarge"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/WidgetsPaddingLarge"
+                    android:text="@string/confirmOffer"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

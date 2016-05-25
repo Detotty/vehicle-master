@@ -1,0 +1,45 @@
+﻿Tasks missing.
+Problems in Web services
+1. Type of vehicle is functional but if not tick then error should be same time.
+2. There is no one way and return function. (I talked with Ashrful to add this before)
+3. Total Km, that should be come automatically when entering pickup and drop points, it should be double when customer click for return.
+4. User cannot select past time. Now they can.
+5. Timer can be select from predefined, like 5-10-15-20 and 30mint maximum.
+6. Cost should be shown based on Total Km and multiply the rate fixed by type of car via at the time of addition deletion of car
+7. There is no driver management ie active/block/edit driver
+8. There is not reporting for bids.
+9. When push the tab start bidding there is no bid number, each bid should be having unique number that should be order number as well.
+10. There is no integration of SMS API, that how customer will get the notification of confirmation of bid and driver details who’s bid was lowest?
+11. There is no way to active or block the drivers. Cannot check the list of drivers.
+12. Bid Duplication not allow.
+
+Application issues
+
+1. While registration at City module, Next tab is not working
+2. Pickup:
+3. Drop:
+4. Cities name should be bigger and more prominent
+5. Pickup date is mentioned but there are no details of time of pickup appears on the job.
+6. City filter not working.
+7. Tapping on bid detail now driver can come back to the job sheet, this already discussed should be possible only when bid expire, 
+driver cannot be able to check details of available jobs. 
+If driver open any job he should be bid for that or should wait until finish to enter in next.
+
+
+8. Limit of 5 bids view/bid a day should be active.
+9. Pickup Date and Time should be more prominent.
+10. Currency should be use Rs. Instead of $.
+11. Some areas , drivers demand more money then calculated, if some driver would bid for highest money, and its accepted, then in bid confirmation it shows that cash received from customer is less than bid. I think in that case we should move to show only one figure, and that is cash received from customer. And the same send to customer via confirmation sms that how much he has to pay.
+
+12. Bid confirm or should be cancel. (cancel with predefined reasons)
+13. Bid log for his own bids. And detail of confirms job.
+14. Notification for new jobs.
+
+
+
+1,2, 3, 4, 6,10, 11
+
+
+
+
+

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/WidgetsPaddingLarge">
+
+    <RelativeLayout
+        android:id="@+id/userInputLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/backImageButton"
+            style="@style/ButtonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/WidgetsPaddingMediam"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <org.angmarch.views.NiceSpinner
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/vehicleTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/backImageButton"
+            android:layout_margin="@dimen/WidgetsMarginMediam"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/WidgetsPaddingLarge" />
+
+        <it.gmariotti.cardslib.library.view.CardGridView
+            android:id="@+id/carddemo_grid_base1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_above="@+id/createAcccountButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/vehicleTypeSpinner"
+            android:clipToPadding="false"
+            android:columnWidth="100dp"
+            android:gravity="center"
+            android:horizontalSpacing="8dp"
+            android:numColumns="auto_fit"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="8dp"
+            card:list_card_layout_resourceID="@layout/carddemo_native_grid_gplay" />
+
+        <Button
+            android:id="@+id/createAcccountButton"
+            style="@style/buttonGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/WidgetsMarginMediam"
+            android:drawableLeft="@drawable/ic_person_add_white_36dp"
+            android:drawablePadding="@dimen/drawablePaddingLarge"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/WidgetsPaddingLarge"
+            android:text="@string/createNewAccount"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/registrationProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/WidgetsPaddingLarge"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/letsGoButton"
+            style="@style/buttonGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/WidgetsMarginMediam"
+            android:drawableLeft="@drawable/ic_lets_go"
+            android:drawablePadding="@dimen/drawablePaddingLarge"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/WidgetsPaddingLarge"
+            android:text="@string/letsGo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/retryButton"
+            style="@style/buttonGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/WidgetsMarginMediam"
+            android:drawableLeft="@drawable/ic_lets_go"
+            android:drawablePadding="@dimen/drawablePaddingLarge"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/WidgetsPaddingLarge"
+            android:text="@string/tryAgain"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

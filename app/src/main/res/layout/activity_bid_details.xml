@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="pk.roadpartner.ui.DashBoradActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_margin="@dimen/WidgetsMagginLarge">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                    android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                    android:paddingRight="@dimen/WidgetsPaddingLarge"
+                    android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/linearLayout3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ic_driver" />
+
+                    <ImageView
+                        android:id="@+id/j_way"
+                        android:layout_width="80dp"
+                        android:padding="@dimen/WidgetsPaddingSmall"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/twoway" />
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/WidgetsPaddingSmall"
+                            android:text="@string/pickupAddress"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/pickUpTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/WidgetsPaddingSmall"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout"
+                    android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                    android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                    android:paddingRight="@dimen/WidgetsPaddingLarge"
+                    android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/linearLayout4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ic_destination" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                        android:layout_toLeftOf="@+id/bidButton"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/WidgetsPaddingSmall"
+                            android:text="@string/dropAddress"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/dropTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/WidgetsPaddingSmall"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout2"
+                    android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                    android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                    android:paddingRight="@dimen/WidgetsPaddingLarge"
+                    android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                    <ImageView
+                        android:id="@+id/imageViewDis"
+                        android:layout_width="wrap_content"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/linearLayoutd"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/distance" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                        android:layout_toLeftOf="@+id/bidButton"
+                        android:layout_toRightOf="@+id/imageViewDis"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/WidgetsPaddingSmall"
+                            android:text="@string/distance"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/KM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/WidgetsPaddingSmall"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout5"
+                    android:paddingBottom="@dimen/WidgetsPaddingSmall"
+                    android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                    android:paddingRight="@dimen/WidgetsPaddingLarge"
+                    android:paddingTop="@dimen/WidgetsPaddingMediam">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/linearLayout"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ic_offer_price" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/WidgetsMarginMediam"
+                        android:layout_toLeftOf="@+id/bidButton"
+                        android:layout_toRightOf="@+id/imageView10"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/WidgetsPaddingSmall"
+                            android:text="@string/offerPrice"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/offerPriceTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/WidgetsPaddingSmall"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/WidgetsMarginSmall"
+                        android:layout_marginLeft="@dimen/WidgetsMagginLarge"
+                        android:text="@string/pickupdate"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/pickUpDateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                        android:text="date"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/timeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/pickUpTimeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/WidgetsPaddingLarge"
+                        android:text="time"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_margin="@dimen/WidgetsMagginLarge"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <pk.roadpartner.view.DigitalClock
+                    android:gravity="center"
+                    android:id="@+id/timeCounterDigitalClock"
+                    style="@style/ClockButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/WidgetsMagginLarge"
+                    android:paddingTop="@dimen/WidgetsPaddingLargeExtraExtra"
+                    android:paddingBottom="@dimen/WidgetsPaddingLargeExtraExtra"
+                    android:text="00:00:00"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="50sp" />
+
+                <EditText
+                    android:id="@+id/bidEditText"
+                    style="@style/RoadEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/button2"
+                    android:layout_margin="@dimen/WidgetsMagginLarge"
+                    android:drawableLeft="@drawable/ic_doller"
+                    android:drawablePadding="@dimen/drawablePaddingLarge"
+                    android:ems="10"
+                    android:hint="@string/yourBid"
+                    android:inputType="number"
+                    android:padding="@dimen/WidgetsPaddingLarge"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/startBidButton"
+                    style="@style/buttonGreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/cnicEditText"
+                    android:layout_margin="@dimen/WidgetsMagginLarge"
+                    android:drawableLeft="@drawable/ic_start_bidding"
+                    android:drawablePadding="@dimen/drawablePaddingLarge"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/WidgetsPaddingLarge"
+                    android:text="@string/start_bidding"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

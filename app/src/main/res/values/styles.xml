@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeWithoutFullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="KiteButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="RoadEditText" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_seletor</item>
+    </style>
+
+    <style name="buttonGreen" parent="KiteButton">
+        <item name="android:background">@drawable/grey_button_seletor</item>
+    </style>
+
+    <style name="ButtonGray" parent="KiteButton">
+        <item name="android:background">@drawable/grey_button_seletor</item>
+    </style>
+
+    <style name="ButtonBack" parent="Base.Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/back_button_seletor</item>
+    </style>
+
+    <style name="ClockButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@color/clockTextColor</item>
+        <item name="android:background">@drawable/black_button</item>
+    </style>
+</resources>
